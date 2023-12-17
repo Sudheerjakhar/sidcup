@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+*::selection{
+    color: #95C11E;
+    background-color: #fff;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+}
+.cursorBlur{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e68;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+.nav{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: flex-start;
+    gap: 50px;
+    position: fixed;
+    padding: 0 100px;
+    z-index: 99;
+}
+
+.nav img{
+    height: 75px;
+}
+
+.nav h4{
+    font-weight: 500;
+    cursor: pointer;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px #95C11E;
+    z-index: -1;
+}
+.page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+}
+.page1 h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.page1 p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+.page2 marquee h4{
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #ffffff;
+    margin-bottom: 20px;
+}
+
+
+.aboutUs{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 60px;
+    position: relative;
+    z-index: 10;
+}
+.aboutUs img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.aboutusIn{
+    width: 40%;
+    text-align: center;
+}
+.aboutusIn h3{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.aboutusIn p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.card-container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    height: 80%;
+    width: 25%;
+    border-radius: 30px;
+    background-size: cover;
+    margin-top: 20px;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+#card1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.inside-card{
+    width: 100%;
+    height: 100%;
+    background-color: #95C11E;
+    padding: 30px;
+    padding-top: 60px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+.inside-card h3{
+font-size: 30px;
+margin-bottom: 20px;
+font-weight: 800;
+color: #000;
+white-space: nowrap;
+}
+.inside-card p{
+    font-size: 15px;
+    color: #000;
+}
+
+.card:hover .inside-card{
+    opacity: 1;
+}
+
+.card:hover{
+    transform: rotate3d(-1,1,0,15deg);
+}
+
+.green-div{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #455419,#95c11e);
+}
+.green-div h4{
+    color: #000;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: center;
+    width: 50%;
+    line-height: 50px;
+}
+.green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 15%;
+}
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3>p{
+   width: 60%;
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+   line-height: 40px;
+}
+.page3 img{
+    position: absolute;
+    height: 60px;
+}
+.page3 #colon1{
+    top: 15%;
+    left: 15%;
+}
+.page3 #colon2{
+    bottom: 20%;
+    right: 15%;
+}
+
+.page4{
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.page4 h1{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 700;
+    top: -12%;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px #fff;
+}
+.elem{
+    height: 65%;
+    width: 26%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    transition: all ease 0.5s;
+}
+.elem h3{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    transition: all ease 0.5s;
+    position: absolute;
+    z-index: 10;
+}
+.elem:hover h3{
+    color: #fff;
+    background-color: transparent;
+}
+.elem:hover img{
+    scale: 1;
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.footerimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+}
+.footer h3{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 50px;
+    color: #000;
+}
+.footer h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #000;
+}
+.footer h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+}
